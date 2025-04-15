@@ -1,0 +1,102 @@
+// const student = {
+//     name: "ujjwal kandel",
+//     email: "ujjwalkandel!@gmail.com",
+//     marksObt: 340
+// }
+ 
+// const percentage = student.marksObt/5
+// if(percentage>=80){
+//     console.log("Distinction")
+// } else if (percentage >=60 && percentage < 80){
+//     console.log("First Division")
+// } else if (percentage >=45 && percentage < 60){
+//     console.log("Second Division")
+// } else if (percentage >=35 && percentage < 45){
+//         console.log("Third Division")
+// } else {
+//  console.log("Sorry! You are failed.")
+// }
+
+// Task 1
+// calculate total bill to be paid by a house hold if electricity consumed for a month is 350 units given 
+// for the first 20 units, a lumpsum amount of NPR. 80 has to be paid
+// for the next 20 units the rate is Npr. 5/unit
+// for the next 30 units the rate is Npr. 7/unit
+// for the next 50 units the rate is Npr. 10/unit
+// for the next 100 units the rate is Npr. 15/unit
+// any units above this, the rate is Npr. 20/unit 
+ 
+// const consumedUnits = 350;
+// let toBePaid = 0; 
+
+// if(consumedUnits <= 20) {
+//     toBePaid = 80
+// } else if(consumedUnits <= 40) {
+//     toBePaid = 80 + (consumedUnits - 20) * 5
+// } else if(consumedUnits <= 70) {
+//     toBePaid = 80 + 20 * 5 + (consumedUnits - 40) * 7
+// } else if(consumedUnits <= 120) {
+//    toBePaid = 80 + 20 * 5 + 30 * 7 + (consumedUnits - 70) * 10
+// } else if(consumedUnits <= 220) {
+//     toBePaid = 80 + 20 * 5 + 30 * 7 + 50 * 10 + (consumedUnits - 120) * 15
+// } else {
+//     toBePaid = 80 + 20 * 5 + 30 * 7 + 50 * 10 + 100 * 15 + (consumedUnits - 220) * 20;
+// }
+//  console.log("To be Paid: Npr.", toBePaid)
+
+
+// Task 2
+// calculate
+// a. Annual salary after Tax
+// b. Monthly salary after tax
+// c. Annual Tax to be paid
+// d. Monthly Tax to be paid
+// consider a software Developer earn Npr. 5000000 yearly before tax.
+// Given the tax brackets
+// if annual income is less than 500000 => tax = 1%
+// if annual income is 200000 more, => tax = 15%
+// if annual income is 300000 more, => tax = 20%
+// if annual income is 1000000 more, => tax = 25%
+// if annual income is 1500000, more => tax = 30%
+//above any of the mentioned, more => tax = 36%
+
+// 500000 => 1% => 5000 yearly tax 
+
+// const salary = 5000000
+// let taxAnnual = 0;
+
+// if(salary <= 500000) {
+//     taxAnnual = salary * 0.01
+// } else if(salary <= 700000) {
+//     taxAnnual = 500000 * 0.01 + (salary - 500000) * 0.15
+// } else if(salary <= 1000000) {
+//     taxAnnual = 500000 * 0.01 + 200000 * 0.15 + (salary - 700000) * 0.2
+// } else if(salary <= 2000000) {
+//     taxAnnual = 500000 * 0.01 + 200000 * 0.15 + 300000 * 0.20 + (salary - 1000000) * 0.25
+// } else if(salary <= 3500000) {
+//     taxAnnual = 500000 * 0.01 + 200000 * 0.15 + 300000 * 0.20 + 1000000 * 0.25 + (salary - 2000000) * 0.30
+// }else {
+//     taxAnnual = 500000 * 0.01 + 200000 * 0.15 + 300000 * 0.20 + 1000000 * 0.25 + 1500000 * 0.30 + (salary - 3500000) * 0.36
+// }
+
+// console.log("Annual Tax: Npr. ", taxAnnual )
+// console.log("Annual Salary: Npr. ",(salary-taxAnnual) )
+// console.log("Monthly Tax: Npr. ",(taxAnnual/12))
+// console.log("Monthly Salary: Npr. ",(salary-taxAnnual)/12)
+
+// switch case
+switch(day) {
+    case "Sunday":
+    console.log("Holiday")
+    break; 
+    case "Saturday":
+        console.log("Holiday")
+            break;
+    case "friday":
+        console.log("weekday")
+        break; 
+    default:
+        console.log("Weekday")  
+}
+
+ 

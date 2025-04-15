@@ -1,0 +1,2 @@
+sum =+ currv
+    // return sum;
