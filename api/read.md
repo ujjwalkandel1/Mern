@@ -40,3 +40,24 @@ User ---- API Request -----> Routing ------- middleware/optional ---> controller
 Agent      login,post       url, method      Validation             Business logic
                                                                       ----------Respond to client   --->JSON
                                                      --------------- Response to client --------------->JSON Response
+
+# Ecommerce
+CRUD => create, read, update, delete
+-Auth
+    -login
+    - register
+    - activate
+    - forget
+    - reset
+    - logout 
+- User
+     - CRUD 
+- Products
+      -CRUD
+- Category
+     -CRUD
+- Brand
+     -CRUD
+- Orders
+    -CRUD
+- Payment/Transaction
